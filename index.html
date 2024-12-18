@@ -1,0 +1,386 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main" >
+        <nav>
+            <div class="head">
+                <div class="left">
+                    <p>Get the app</p>
+                </div>
+                <div class="left">
+                    <i class="fa-solid fa-bars menu-icon" onclick="Menu()"></i>
+                </div>
+               <ul class="desktop-menu">
+                    <li>Investor Relations</li>
+                    <li>Add Resturant</li>
+                    <li>Login</li>
+                    <li>Sign up</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="side-menu" id="sideMenu">
+            <div class="menu-header">
+                <!-- Close Button -->
+                <i class="fa-solid fa-times close-icon" onclick="closeMenu()"></i>
+                <h1 class="logo">Zomato</h1>
+            </div>
+            <ul>
+                <li>Investor Relations</li>
+                <li>Add Restaurant</li>
+                <li>Log in</li>
+                <li>Sign up</li>
+            </ul>
+        </div>
+        <div class="zomato">
+            <img src="img2.avif" alt="alt"><br><br><br>
+            <h1>Discover the best food & drinks in Chennai</h1><br><br>
+            <div class="wrapper">
+                <div class="w1">
+                <i class="fas fa-map-marker-alt"></i>
+                <select name="location" id="select1">
+                    <option value="" disabled selected>Chennai</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Hyderbad">Hyderbad</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Pune">Pune</option>
+                </select>
+                </div>
+                <div class="divider"></div>
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for resturant,cuisine or a dish">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main1">
+        <div class="card">
+            <img src="img3.jpeg" alt="Order Online">
+            <h4>Order Online</h4>
+            <p>Stay home and order to your doorstep</p>
+        </div>
+        <div class="card">
+            <img src="img4.jpeg" alt="Dining">
+            <h4>Dining</h4>
+            <p>View the city's favourite dining venues</p>
+        </div>
+        <div class="card">
+            <img src="img5.jpeg" alt="Live Events">
+            <h4>Live Events</h4>
+            <p>Discover India's best live events</p>
+        </div>
+    </div>
+    <div class="col">
+        <h2 style="font-size: 36px;">Collections</h2>
+        <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Chennai, based on trends</p>
+    </div>
+    <div class="main2">
+        <img src="img6.avif">
+        <img src="img7.avif">
+        <img src="img8.avif">
+        <img src="img9.avif">
+    </div>
+    <br><br>
+    <div class="container">
+        <h2 style="font-size: 30px;">Popular localities in and around Chennai</h2>
+        <div class="grid" id="placesGrid">
+            <div class="place-card">
+                <h4>T. Nagar</h4>
+                <p>387 places</p>
+            </div>
+            <div class="place-card">
+                <h4>Nungambakkam</h4>
+                <p>337 places</p>
+            </div>
+            <div class="place-card">
+                <h4>Velachery</h4>
+                <p>536 places</p>
+            </div>
+            <div class="place-card">
+                <h4>Adyar</h4>
+                <p>232 places</p>
+            </div>
+            <div class="place-card">
+                <h4>Anna Nagar East</h4>
+                <p>392 places</p>
+            </div>
+            <div class="place-card">
+                <h4>Thuraipakkam</h4>
+                <p>283 places</p>
+            </div>
+            <div class="place-card">
+                <h4>Mylapore</h4>
+                <p>186 places</p>
+            </div>
+            <div class="place-card">
+                <h4>Alwarpet</h4>
+                <p>152 places</p>
+            </div>
+        <div class="place-card" id="seeMoreBtn">see more</div></div>
+    </div>
+    <div class="download">
+        <div class="d1"><img src="img10.avif"></div>
+        <div class="d2">
+            <h1 style="font-size: 40px;">Get the Zomato app</h1>
+            <p>We will send you a link, open it on your phone to download the app</p>
+            <input id="radio1" type="radio" name="ep" value="Email" checked  onclick="showEmail()">
+            <span style="margin-right: 60px;cursor: pointer;">Email</span>
+            <input id="radio2" type="radio" name="ep" value="Phone" onclick="showPhone()">
+            <span style="cursor: pointer;">Phone</span><br><br>
+            <div class="d3" id="email">
+                <input type="text" placeholder="Email">
+                <input type="submit" value="Share app link">
+            </div>
+            <div class="d5" id="phnnos">
+                <div class="phonenum">
+                <div class="d51"><p>+91</p></div>
+                <div class="d52"></div>
+                <div class="d53"><input type="text" placeholder="type here"></div>   
+                </div> 
+                <input type="submit" value="Share app link">
+            </div>
+            <br>
+            <p class="para1">Download app from</p>
+            <div class="d4">
+                <img src="gog.webp">
+                <img src="app.webp">
+            </div>
+        </div>
+    </div>
+    <div class="dropdown" id="dropdown">
+    <h2 style="font-size: 35px;font-weight: 200;margin-bottom: 30px;">Explore options near me</h2>
+        <div class="drop">
+            <div class="dropdown-button" id="dropdown-button1">
+                Popular cuisines Near Me
+                <span id="dropdown-icon">&#x25BC;</span>
+            </div>
+            <div class="dropdown-content" id="dropdown-content1">
+                <p>Bakery near me &bull; Beverages near me &bull; Biryani near me &bull; Burger near me &bull; Chinese near me &bull; Desserts near me &bull; Ice Cream near me &bull; Juices near me &bull; Momos near me &bull; Mughlai near me &bull; North Indian near me &bull; Pizza near me &bull; Rolls near me &bull; Sandwich near me &bull; Seafood near me &bull; Shake near me &bull; Sichuan near me &bull; South Indian near me &bull; Street near me &bull; Tea near me</p>
+            </div>
+        </div>
+        <br>
+        <div class="drop">
+            <div class="dropdown-button" id="dropdown-button2">
+                Popular Resturant Types Near Me
+                <span id="dropdown-icon">&#x25BC;</span>
+            </div>
+            <div class="dropdown-content" id="dropdown-content2">
+                <p>Bakeries near me &bull; Bars near me &bull; Beverage Shops near me &bull; Bhojanalya near me &bull; Cafés near me &bull; Casual Dining near me &bull; Clubs near me &bull; Cocktail Bars near me &bull; Confectioneries near me &bull; Dessert Parlors near me &bull; Dhabas near me &bull; Fine Dining near me &bull; Food Courts near me &bull; Food Trucks near me &bull; Irani Cafes near me &bull; Kiosks near me &bull; Lounges near me &bull; Paan Shop near me &bull; Quick Bites near me &bull; Shacks near me &bull; Sweet Shops near me</p>
+            </div>
+        </div>
+        <br>
+        <div class="drop">
+            <div class="dropdown-button" id="dropdown-button3">
+                Top Resturant Chains
+                <span id="dropdown-icon">&#x25BC;</span>
+            </div>
+            <div class="dropdown-content1" id="dropdown-content3">
+                <p>Bikanervala</p>
+                <p>Burger King</p>
+                <p>Domino's</p>
+                <p>KFC</p>
+                <p>McDonald's</p>
+                <p>Moti Mahal Delux</p>
+                <p>Pizza Hut</p>
+                <p>WOW!Momo</p>
+            </div>
+        </div>
+        <br>
+        <div class="drop">
+            <div class="dropdown-button" id="dropdown-button4">
+                cities we deliver to
+                <span id="dropdown-icon">&#x25BC;</span>
+            </div>
+            <div class="dropdown-content1" id="dropdown-content4">
+                <p>Mumbai</p>
+                <p>Delhi</p>
+                <p>Bangalore</p>
+                <p>Hyderabad</p>
+                <p>Ahmedabad</p>
+                <p>Chennai</p>
+                <p>Kolkata</p>
+                <p>Pune</p>
+                <p>Jaipur</p>
+                <p>Lucknow</p>
+                <p>Surat</p>
+                <p>Kanpur</p>
+                <p>Nagpur</p>
+                <p>Patna</p>
+                <p>Indore</p>
+                <p>Thane</p>
+                <p>Bhopal</p>
+                <p>Ludhiana</p>
+                <p>Agra</p>
+                <p>Nashik</p>
+                <p>Vadodara</p>
+                <p>Faridabad</p>
+                <p>Ghaziabad</p>
+                <p>Rajkot</p>
+                <p>Meerut</p>
+                <p>Amritsar</p>
+                <p>Varanasi</p>
+                <p>Allahabad </p>
+                <p>Vizag</p>
+                <p>Jabalpur</p>
+                <p>Jodhpur</p>
+                <p>Madurai</p>
+                <p>Coimbatore</p>
+                <p>Kota</p>
+                <p>Guwahati</p>
+                <p>Chandigarh</p>
+                <p>Solapur</p>
+                <p>Tiruchi</p>
+                <p>Bareilly</p>
+                <p>Mysuru</p>
+                <p>Tiruppur</p>
+                <p>Moradabad</p>
+                <p>Bhubaneswar</p>
+                <p>Aligarh</p>
+                <p>Bhiwandi</p>
+                <p>Salem</p>
+                <p>Gwalior</p>
+                <p>Warangal</p>
+                <p>Raipur</p>
+                <p>Aurangabad</p>
+                <p>Jalgaon</p>
+                <p>Bhavnagar</p>
+                <p>Kollam</p>
+                <p>Udaipur</p>
+                <p>Mangalore</p>
+                <p>Dehradun</p>
+                <p>Srinagar</p>
+                <p>Nanded</p>
+                <p>Gandhinagar</p>
+                <p>Asansol</p>
+                <p>Dhanbad</p>
+                <p>Kozhikode </p>
+                <p>Thrissur</p>
+                <p>Rajahmundry</p>
+                <p>Nellore</p>
+                <p>Rourkela</p>
+                <p>Kurnool</p>
+                <p>Tumakuru</p>
+                <p>Belagavi</p>
+                <p>Guntur</p>
+                <p>Siliguri</p>
+                <p>Vijayawada</p>
+                <p>Shimla</p>
+                <p>Panaji</p>
+                <p>Tirunelveli</p>
+                <p>Imphal</p>
+                <p>Jamsedpur</p>
+                <p>Cuttack</p>
+                <p>Gorakhpur</p>
+                <p>Dhule</p>
+                <p>Sahara</p>
+                <p>Amravati</p>
+                <p>Noida</p>
+                <p>Bhilai</p>
+                <p>Bikaner</p>
+                <p>Kakinada</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+    <div class="footer">
+        <div class="foot">
+            <div class="foot1">
+                <img src="zom.avif">
+            </div>
+            <div class="foot2">
+                <div class="con">
+                    <img src="india.png" alt="india">
+                    <select id="countries" name="country">
+                        <option value="" disabled selected>India</option>
+                        <option value="us">United States</option>
+                        <option value="in">India</option>
+                        <option value="ca">Canada</option>
+                        <option value="au">Australia</option>
+                        <option value="uk">United Kingdom</option>
+                    </select>
+                </div>
+                <div class="lang">
+                    <i class="fa-solid fa-globe"></i>
+                    <select id="lang" name="lang">
+                        <option value="" disabled selected>English</option>
+                        <option value="us">English</option>
+                        <option value="in">Hindi</option>
+                        <option value="ca">Telugu</option>
+                        <option value="au">Tamil</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block1">
+                <h3>About Zomato</h3>
+                <ul>
+                    <li>Who We Are</li>
+                    <li>Blog</li>
+                    <li>Work With Us</li>
+                    <li>Investor Relations</li>
+                    <li>Report Fraud</li>
+                    <li>Press Kit</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="block1">
+                <h3>Zomaverse</h3>
+                <ul>
+                    <li>Zomato</li>
+                    <li>Blinkit</li>
+                    <li>District</li>
+                    <li>Feeding India</li>
+                    <li>Hyperpure</li>
+                    <li>Zomato Live</li>
+                    <li>Zomaland</li>
+                    <li>Weather Union</li>
+                </ul>
+            </div>
+            <div class="block1">
+                <h3>For Resturants</h3>
+                <ul>
+                    <li>Partner With Us</li>
+                    <li>Apps For You</li>
+                </ul>
+            </div>
+            <div class="block1">
+                <h3>Learn More</h3>
+                <ul>
+                    <li>Privacy</li>
+                    <li>Security</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+            <div class="block1">
+                <h3>Social Links</h3>
+                <div class="social-icons">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                  <div class="app-links">
+                    <img src="app.webp" alt="App Store">
+                    <img src="gog.webp" alt="Google Play">
+                  </div>
+            </div>
+        </div>
+        <hr>
+        <p class="para">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All rights reserved.</p>
+    </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
+
+            
